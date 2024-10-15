@@ -1,29 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-    
-    body {
-        font-family: "Poppins", serif;
-        font-weight: 500;
-        font-style: normal;
-        display: block;
-        margin: 0;
-        padding: 20px;
-    }
-    .container {
-        width: 50%; 
-        max-width: 600px; 
-        margin: auto; /* Centers the container horizontally */
-    }
-    .button {
-        display: inline-block; /* Ensures buttons are displayed inline */
-        padding: 10px 20px; 
-        margin: 10px 0; 
-        background-color: #111727; 
-        color: white; 
-        text-decoration: none; /* Removes underline from text */
-        border-radius: 30px; /* Rounds the corners of the button */
-        text-align: center; 
-    }
-    .button:hover {
-        background-color: #0056b3; 
-    }
+h1 {
+    margin: 1cm 0 20px; 
+    font-size: 1.5em; 
+}
+p {
+    margin: 0 0 20px; /* Adds margin below the paragraph */
+    font-size: 0.9em; /* Sets a smaller font size */
+}
+body {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+    margin: 0;
+    padding: 20px;
+}
+.main-container {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between content and profile */
+    align-items: flex-start; /* Align items at the top */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Optional max width */
+    margin: 100px auto; /* Center the container with top/bottom margin */
+    padding: 50px; /* Padding inside the container */
+    background-color: white; /* Optional background color */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 2px 8px grey;
+}
+.content {
+    flex: 1; /* Allow the content to take available space */
+    margin-right: 20px; /* Space between content and profile */
+}
+.container {
+    width: 50%; 
+    max-width: 600px; 
+    margin: auto; /* Centers the container horizontally */
+}
+.button-container {
+    display: flex; /* Use flexbox to arrange buttons in a row */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between the buttons */
+    margin-top: 20px; /* Space above the button container */
+}
+.button {
+    display: inline-block; /* Ensures buttons are displayed inline */
+    padding: 10px 30px; 
+    margin: 10px 0; 
+    background-color: #111727; 
+    color: white; 
+    text-decoration: none; /* Removes underline from text */
+    border-radius: 30px; /* Rounds the corners of the button */
+    text-align: center; 
+}
+.button:hover {
+    background-color: #0056b3; 
+}
+.button:hover {
+    background-color: #0056b3; 
+}
+.text-button {
+    display: block; /* Ensures vertical stacking */
+    margin: 20px 20px; 
+    color: #007BFF; 
+    text-decoration: none; /* Removes underline */
+    font-size: 1em; 
+}
+.text-button:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.icon {
+    width: 16px; /* Sets the width of icons */
+    vertical-align: left; /* Aligns icons with the text */
+    margin-left: 5px; /* Adds space between text and icon */
+}
+.profile-container {
+    width: 300px; /* Sets a fixed width for the profile container */
+    text-align: center; /* Center text in the profile */
+    margin: auto; /* Centers the container */
+    border: 2px solid white; /* White border around the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adds shadow effect */
+    background-color: white; /* White background for the container */
+    overflow: hidden; /* Prevents overflow of content */
+    margin-top: 20px; /* Adds space above the profile container */
+}
+.profile-container img {
+    width: 100%; /* Makes the image fill the container's width */
+    border-radius: 10px; /* Matches the container's border radius */
+}
+.profile-container h1, .profile-container p {
+    text-align: center; /* Centers the text */
+    margin: 10px 0; 
+}
+.social-buttons {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers buttons horizontally */
+    margin: 20px ; /* Adds space around the buttons */
+}
+.fa {
+    width: 40px; /* Sets the width of social icons */
+    height: 40px; /* Sets the height of social icons */
+    display: flex; /* Uses flexbox for alignment */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    text-decoration: none; /* Removes underline from links */
+    margin: 0 10px; /* Adds margin around the icons */
+    border-radius: 50%; /* Makes the icons circular */
+    font-size: 28px; /* Sets the font size for icons */
+}
+.fa-facebook {
+    background: #3B5998; 
+    color: white; 
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white; 
+}
+.fa-linkedin {
+    background: #007bb5; 
+    color: white; 
+}
+.fa-instagram {
+    background: #125688; 
+    color: white; 
+}
