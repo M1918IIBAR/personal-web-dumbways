@@ -1,0 +1,8 @@
+tag yang sering dipake :
+p
+a
+button
+h1 - h6
+image
+div
+input

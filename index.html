@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif; 
+        background-color: #f4f4f4; 
+        margin: 0; 
+        padding: 20px; 
+    }
+    .container {
+        width: 50%; 
+        max-width: 600px; 
+        margin: auto; /* Centers the container horizontally */
+    }
+    h1 {
+        text-align: left; 
+        margin: 1cm 0 20px; 
+        font-size: 1.5em; 
+    }
+    p {
+        text-align: left; 
+        margin: 0 0 20px; /* Adds margin below the paragraph */
+        font-size: 0.9em; /* Sets a smaller font size */
+        overflow-wrap: break-word; /* Allows long words to break and wrap to the next line */
+    }
+    .button {
+        display: inline-block; /* Ensures buttons are displayed inline */
+        padding: 10px 20px; 
+        margin: 10px 0; 
+        background-color: #007BFF; 
+        color: white; 
+        text-decoration: none; /* Removes underline from text */
+        border-radius: 30px; /* Rounds the corners of the button */
+        text-align: center; 
+    }
+    .button:hover {
+        background-color: #0056b3; 
+    }
+    .text-button {
+        display: block; /* Ensures vertical stacking */
+        margin: 10px 0; 
+        color: #007BFF; 
+        text-decoration: none; /* Removes underline */
+        font-size: 1em; 
+    }
+    .text-button:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+    .icon {
+        width: 16px; /* Sets the width of icons */
+        vertical-align: left; /* Aligns icons with the text */
+        margin-left: 5px; /* Adds space between text and icon */
+    }
+    .profile-container {
+        width: 300px; /* Sets a fixed width for the profile container */
+        margin: auto; /* Centers the container */
+        border: 2px solid white; /* White border around the container */
+        border-radius: 10px; /* Rounds the corners of the container */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adds shadow effect */
+        background-color: white; /* White background for the container */
+        overflow: hidden; /* Prevents overflow of content */
+        margin-top: 20px; /* Adds space above the profile container */
+    }
+    .profile-container img {
+        width: 100%; /* Makes the image fill the container's width */
+        border-radius: 10px; /* Matches the container's border radius */
+        display: block; /* Ensures the image behaves as a block element */
+    }
+    .profile-container h1, .profile-container p {
+        text-align: center; /* Centers the text */
+        margin: 10px 0; 
+    }
+    .social-buttons {
+        display: flex; /* Enables flexbox layout */
+        justify-content: center; /* Centers buttons horizontally */
+        margin: 10px 0; /* Adds space around the buttons */
+    }
+    .fa {
+        width: 40px; /* Sets the width of social icons */
+        height: 40px; /* Sets the height of social icons */
+        display: flex; /* Uses flexbox for alignment */
+        align-items: center; /* Centers items vertically */
+        justify-content: center; /* Centers items horizontally */
+        text-decoration: none; /* Removes underline from links */
+        margin: 0 10px; /* Adds margin around the icons */
+        border-radius: 50%; /* Makes the icons circular */
+        font-size: 28px; /* Sets the font size for icons */
+    }
+    .fa-facebook {
+        background: #3B5998; 
+        color: white; 
+    }
+    .fa-twitter {
+        background: #55ACEE;
+        color: white; 
+    }
+    .fa-linkedin {
+        background: #007bb5; 
+        color: white; 
+    }
+    .fa-instagram {
+        background: #125688; 
+        color: white; 
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hi Welcome to my personal page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet gravida purus. Fusce mollis mattis tellus quis cursus. Suspendisse molestie aliquet ipsum, ut posuere tellus mattis nec. Nullam et nulla nunc. Integer tempor ipsum in turpis tincidunt pulvinar. Integer convallis eu urna non pretium. Curabitur non ligula efficitur, porta mauris a, tincidunt arcu. Nunc diam enim, interdum quis nulla non, ornare viverra ante.</p>
+        
+        <a href="#contact" class="button">Contact</a>
+        <a href="path/to/your/CV.pdf" download class="text-button">Download CV <img src="C:\Users\Raihan\Downloads\downloads.png" alt="" class="icon"></a>
+    </div>
+
+    <div class="social-buttons">
+        <a href="https://www.linkedin.com/in/raihan-muhammad-686675174/" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/dynomite_bar/" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/raihanakbar.muhammad" class="fa fa-facebook"></a>
+        <a href="https://x.com/Dynomite_BAR" class="fa fa-twitter"></a>
+    </div>
+    <div class="profile-container">
+        <img src="C:\Users\Raihan\Pictures\33577134_1237888216347464_6381478020602920960_n.jpg" alt="Raihan Akbar Muhammad">
+        <h1>Raihan Akbar Muhammad</h1>
+        <p>Fullstack Developer</p>
+    </div>
+</body>
+</html>
