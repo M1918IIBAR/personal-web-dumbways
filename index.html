@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Web</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    body {
-        font-family: Arial, sans-serif; 
-        background-color: #f4f4f4; 
-        margin: 0; 
-        padding: 20px; 
-    }
-    .container {
-        width: 50%; 
-        max-width: 600px; 
-        margin: auto; /* Centers the container horizontally */
-    }
     h1 {
         text-align: left; 
         margin: 1cm 0 20px; 
@@ -28,16 +17,7 @@
         font-size: 0.9em; /* Sets a smaller font size */
         overflow-wrap: break-word; /* Allows long words to break and wrap to the next line */
     }
-    .button {
-        display: inline-block; /* Ensures buttons are displayed inline */
-        padding: 10px 20px; 
-        margin: 10px 0; 
-        background-color: #007BFF; 
-        color: white; 
-        text-decoration: none; /* Removes underline from text */
-        border-radius: 30px; /* Rounds the corners of the button */
-        text-align: center; 
-    }
+
     .button:hover {
         background-color: #0056b3; 
     }
@@ -107,16 +87,40 @@
         background: #125688; 
         color: white; 
     }
-
     </style>
 </head>
 <body>
+    <nav>
+        <ul
+          style="
+            background-color: #c5c4c4;
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            align-items: center;
+          "
+        >
+          <li>
+            <img src="assets/img/logo.png" style="height: 30px" />
+          </li>
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+          <li>
+            <a href="blog.html"> Blog </a>
+          </li>
+          <li style="display: flex; justify-content: flex-end; width: 80%">
+            <a href="contact.html" class="btn-orange">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
     <div class="container">
         <h1>Hi Welcome to my personal page</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet gravida purus. Fusce mollis mattis tellus quis cursus. Suspendisse molestie aliquet ipsum, ut posuere tellus mattis nec. Nullam et nulla nunc. Integer tempor ipsum in turpis tincidunt pulvinar. Integer convallis eu urna non pretium. Curabitur non ligula efficitur, porta mauris a, tincidunt arcu. Nunc diam enim, interdum quis nulla non, ornare viverra ante.</p>
         
-        <a href="#contact" class="button">Contact</a>
-        <a href="path/to/your/CV.pdf" download class="text-button">Download CV <img src="assets\downloads.png" alt="" class="icon"></a>
+        <a href="contact.html" class="button">Contact</a>
+        <a href="path/to/your/CV.pdf" download class="text-button">Download CV <img src="assets\img\downloads.png" alt="" class="icon"></a>
     </div>
 
     <div class="social-buttons">
@@ -126,7 +130,7 @@
         <a href="https://x.com/Dynomite_BAR" class="fa fa-twitter"></a>
     </div>
     <div class="profile-container">
-        <img src="assets\33577134_1237888216347464_6381478020602920960_n.jpg" alt="Raihan Akbar Muhammad">
+        <img src="assets\img\33577134_1237888216347464_6381478020602920960_n.jpg" alt="Raihan Akbar Muhammad">
         <h1>Raihan Akbar Muhammad</h1>
         <p>Fullstack Developer</p>
     </div>
