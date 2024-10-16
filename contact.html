@@ -35,26 +35,26 @@
         <div class="container">
         <h1 style="text-align: center;">GET IN TOUCH</h1>
         <div style="display: flex; justify-content: center; margin-top: 50px">
-        <form style="display: flex; flex-direction: column; gap: 10px; width: 300px">
+        <form onsubmit="SendToMail(event)" style="display: flex; flex-direction: column; gap: 10px; width: 300px">
         </div>
             <div>
                 <label>Name</label>
-                <input />
+                <input id="input-name"/>
             </div>
             <br>
             <div>
                 <label>Email</label>
-                <input />
+                <input id="input-email"/>
             </div>
             <br>
             <div>
                 <label>Phone Number</label>
-                <input />
+                <input id="input-phone"/>
             </div>
             <br>
             <div>
             <label>Subject</label>
-            <select>
+            <select id="input-subject">
                 <option value="" style="background-color: white;" disabled selected hidden></option>
                 <option value="Fullstack Developer">Fullstack Developer</option>
                 <option value="Frontend Developer">Frontend Developer</option>
@@ -64,11 +64,13 @@
             <br>
             <div>
             <label for="message">Your Message</label>
-            <textarea ></textarea>
+            <textarea id="input-message"></textarea>
             <br><br><br>
-            <button class="btn-orange">Submit</button>
             </div>
+            <button class="btn-orange">Submit</button>
           </form> 
         </div>
+
+        <script src="assets/js/contact.js"></script>
     </body>
 </html>
