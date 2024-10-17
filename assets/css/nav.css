@@ -1,8 +1,12 @@
+nav ul {
+    margin: 0;
+}
+
 .btn-orange {
         background-color: orangered;
         padding: 10px;
         color: white;
-        font-weight: bold;
-        font-size: medium;
-        border-radius: 10px;
+        font-weight: 600;
+        font-size: large;
+        border-radius: 30px;
     }

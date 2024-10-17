@@ -5,6 +5,12 @@
     font-weight: 500;
     font-style: normal;
 }
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: 700;
+}
 h1 {
     margin: 1cm 0 20px; 
     font-size: 1.5em; 
@@ -41,7 +47,7 @@ body {
 }
 .button-container {
     display: flex; /* Use flexbox to arrange buttons in a row */
-    justify-content: center; /* Center the buttons horizontally */
+    justify-content: left;
     gap: 10px; /* Space between the buttons */
     margin-top: 20px; /* Space above the button container */
 }
@@ -54,9 +60,6 @@ body {
     text-decoration: none; /* Removes underline from text */
     border-radius: 30px; /* Rounds the corners of the button */
     text-align: center; 
-}
-.button:hover {
-    background-color: #0056b3; 
 }
 .button:hover {
     background-color: #0056b3; 
@@ -89,41 +92,23 @@ body {
 }
 .profile-container img {
     width: 100%; /* Makes the image fill the container's width */
+    object-fit: cover;
+    display: block;
+    margin: auto;
     border-radius: 10px; /* Matches the container's border radius */
 }
 .profile-container h1, .profile-container p {
     text-align: center; /* Centers the text */
     margin: 10px 0; 
 }
-.social-buttons {
-    display: flex; /* Enables flexbox layout */
-    justify-content: center; /* Centers buttons horizontally */
-    margin: 20px ; /* Adds space around the buttons */
+.social {
+    max-width: 430px;
+    margin: 40px 0;
+    padding: 0;
+    text-align: left;
 }
-.fa {
-    width: 40px; /* Sets the width of social icons */
-    height: 40px; /* Sets the height of social icons */
-    display: flex; /* Uses flexbox for alignment */
-    align-items: center; /* Centers items vertically */
-    justify-content: center; /* Centers items horizontally */
-    text-decoration: none; /* Removes underline from links */
-    margin: 0 10px; /* Adds margin around the icons */
-    border-radius: 50%; /* Makes the icons circular */
-    font-size: 28px; /* Sets the font size for icons */
-}
-.fa-facebook {
-    background: #3B5998; 
-    color: white; 
-}
-.fa-twitter {
-    background: #55ACEE;
-    color: white; 
-}
-.fa-linkedin {
-    background: #007bb5; 
-    color: white; 
-}
-.fa-instagram {
-    background: #125688; 
-    color: white; 
+
+.social img {
+    padding: 0.5em;
+    width: 10%;
 }
